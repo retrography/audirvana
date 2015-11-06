@@ -64,7 +64,7 @@ NSString * const AUDMediaKeysUseChangeNotification = @"AUDMediaKeysUseChangeNoti
 	audioDevicesUIDs = nil;
 
 	if (![super initWithWindowNibName:@"Preferences"])
-		return nil;
+        return nil;
 	return self;
 }
 
@@ -173,13 +173,13 @@ NSString * const AUDMediaKeysUseChangeNotification = @"AUDMediaKeysUseChangeNoti
 		[splRateHigherThan192kHz setHidden:YES];
 
 	UInt64 maxSeconds = (UInt64)[maxAudioBufferSizeSlider intValue]*1024*1024/2/(44100*8);
-	[maxTrackLengthAt44_1 setStringValue:[NSString stringWithFormat:@"%imn @44.1kHz",maxSeconds/60]];
+	[maxTrackLengthAt44_1 setStringValue:[NSString stringWithFormat:@"%llumn @44.1kHz",maxSeconds/60]];
 	if (activeDeviceMaxSplRate > 0.0) {
         maxSeconds = (UInt64)[maxAudioBufferSizeSlider intValue]*1024*1024/2/(activeDeviceMaxSplRate*8);
         if ((activeDeviceMaxSplRate%1000) != 0)
-            [maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%imn @%.1fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
+            [maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%llumn @%.1fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
         else
-            [maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%imn @%.0fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
+            [maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%llumn @%.0fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
     }
 }
 
@@ -228,12 +228,12 @@ NSString * const AUDMediaKeysUseChangeNotification = @"AUDMediaKeysUseChangeNoti
 - (IBAction)changeMaxAudioBufferSize:(id)sender
 {
 	UInt64 maxSeconds = (UInt64)[maxAudioBufferSizeSlider intValue]*1024*1024/2/(44100*8);
-	[maxTrackLengthAt44_1 setStringValue:[NSString stringWithFormat:@"%imn @44.1kHz",maxSeconds/60]];
+	[maxTrackLengthAt44_1 setStringValue:[NSString stringWithFormat:@"%llumn @44.1kHz",maxSeconds/60]];
 	maxSeconds = (UInt64)[maxAudioBufferSizeSlider intValue]*1024*1024/2/(activeDeviceMaxSplRate*8);
 	if ((activeDeviceMaxSplRate%1000) != 0)
-		[maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%imn @%.1fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
+		[maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%llumn @%.1fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
 	else
-		[maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%imn @%.0fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
+		[maxTrackLengthAt192 setStringValue:[NSString stringWithFormat:@"%llumn @%.0fkHz",maxSeconds/60,(float)activeDeviceMaxSplRate/1000]];
 
 	[maxAudioBufferSizeValue setIntValue:[maxAudioBufferSizeSlider intValue]];
 

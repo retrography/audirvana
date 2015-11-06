@@ -242,7 +242,7 @@
             && (mVirtualFormats[formatIdx].mFormat.mBitsPerChannel == streamFormat->mBitsPerChannel)
             && (mVirtualFormats[formatIdx].mFormat.mBytesPerFrame == streamFormat->mBytesPerFrame)) {
 
-            if (mVirtualFormats[formatIdx].mSampleRateRange.mMaximum > maxSampleRate)
+            if (mVirtualFormats[formatIdx].mSampleRateRange.mMaximum > maxSampleRate) {
                 if (mVirtualFormats[formatIdx].mSampleRateRange.mMaximum <= splRateLimit) {
                     maxSampleRate = mVirtualFormats[formatIdx].mSampleRateRange.mMaximum;
                 }
@@ -250,6 +250,7 @@
                      && (splRateLimit > maxSampleRate)) {
                     maxSampleRate = splRateLimit;
                 }
+        }
         }
     }
 
@@ -413,13 +414,14 @@
     if (!mAvailableSampleRates) return 0.0;
 
     for (splRateIdx=0;splRateIdx<mCountAvailableSampleRates;splRateIdx++) {
-        if (mAvailableSampleRates[splRateIdx].mMaximum > maxSampleRate)
+        if (mAvailableSampleRates[splRateIdx].mMaximum > maxSampleRate) {
             if (mAvailableSampleRates[splRateIdx].mMaximum <= splRateLimit) {
                 maxSampleRate = mAvailableSampleRates[splRateIdx].mMaximum;
             }
         else if ((mAvailableSampleRates[splRateIdx].mMinimum <= splRateLimit)
                  && (splRateLimit > maxSampleRate)) {
             maxSampleRate = splRateLimit;
+        }
         }
     }
 
@@ -2562,7 +2564,7 @@ OSStatus HALlistenerProc(AudioObjectID inObjectID,
 		 mBufferData.buffersStreamFormat.mSampleRate/1000.0f];
 	}
 
-	[debugStr appendFormat:@"\nHog Mode is %@\nDevices found : %i\n\nList of devices:\n",mBufferData.isHoggingDevice?@"on":@"off",[audioDevicesList count]];
+	[debugStr appendFormat:@"\nHog Mode is %@\nDevices found : %lu\n\nList of devices:\n",mBufferData.isHoggingDevice?@"on":@"off",(unsigned long)[audioDevicesList count]];
 
 	for (i=0;i<[audioDevicesList count];i++) {
 		deviceDesc= [audioDevicesList objectAtIndex:i];
@@ -2578,8 +2580,8 @@ OSStatus HALlistenerProc(AudioObjectID inObjectID,
 	[debugStr appendString:[deviceDesc description]];
 
 	[debugStr appendFormat:@"\nSimple stereo device: %@",mBufferData.isSimpleStereoDevice?@"yes":@"no"];
-	[debugStr appendFormat:@"\nChannel mapping: L:Stream %i channel %i R:Stream %i channel %i\n\n%i output streams:",mBufferData.channelMap[0].stream,mBufferData.channelMap[0].channel,
-	 mBufferData.channelMap[1].stream,mBufferData.channelMap[1].channel,[[deviceDesc streams] count]];
+	[debugStr appendFormat:@"\nChannel mapping: L:Stream %i channel %i R:Stream %i channel %i\n\n%lu output streams:",mBufferData.channelMap[0].stream,mBufferData.channelMap[0].channel,
+	 mBufferData.channelMap[1].stream,mBufferData.channelMap[1].channel,(unsigned long)[[deviceDesc streams] count]];
 
 	//Streams information
 	for (i=0;i<[[deviceDesc streams] count];i++) {

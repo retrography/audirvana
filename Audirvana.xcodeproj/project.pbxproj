@@ -16,12 +16,12 @@
 		6D198F86120DB867006313FC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D198F85120DB867006313FC /* AudioToolbox.framework */; };
 		6D2AA7BE131AD20000F4D2B0 /* AudirvanaBlackAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6D2AA7BD131AD20000F4D2B0 /* AudirvanaBlackAppIcon.icns */; };
 		6D45B35B1350820E0077E721 /* libsndfile.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D45B35A1350820E0077E721 /* libsndfile.dylib */; };
-		6D45B35C135082170077E721 /* libsndfile.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35A1350820E0077E721 /* libsndfile.dylib */; };
+		6D45B35C135082170077E721 /* libsndfile.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35A1350820E0077E721 /* libsndfile.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D45B35E135085CC0077E721 /* libtag.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D45B35D135085CC0077E721 /* libtag.dylib */; };
-		6D45B35F135085E40077E721 /* libtag.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35D135085CC0077E721 /* libtag.dylib */; };
+		6D45B35F135085E40077E721 /* libtag.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D45B35D135085CC0077E721 /* libtag.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D49A8EE1285CF2E003B8D97 /* libsamplerate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D49A8ED1285CF2E003B8D97 /* libsamplerate.a */; };
 		6D4AB80F1299B22F00E92F02 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4AB80E1299B22F00E92F02 /* Sparkle.framework */; };
-		6D4AB81E1299B2B800E92F02 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D4AB80E1299B22F00E92F02 /* Sparkle.framework */; };
+		6D4AB81E1299B2B800E92F02 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D4AB80E1299B22F00E92F02 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		6D4AB8431299B66600E92F02 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 6D4AB8421299B66600E92F02 /* dsa_pub.pem */; };
 		6D54ECB8123D73AE009E146F /* PlaylistView_Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D54ECB7123D73AE009E146F /* PlaylistView_Delegate.m */; };
 		6D5D2028122905B300D16D29 /* AudioFileCoreAudioLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D2027122905B300D16D29 /* AudioFileCoreAudioLoader.mm */; };
@@ -103,7 +103,7 @@
 		6DF17B3A126984A900051593 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF17B39126984A900051593 /* PreferenceController.m */; };
 		6DF17B3D1269857800051593 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF17B3B1269857800051593 /* Preferences.xib */; };
 		6DF49FE3123B50FC00191768 /* AudioFileSndFileLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49FE2123B50FC00191768 /* AudioFileSndFileLoader.mm */; };
-		6DF4A038123B523F00191768 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A036123B523F00191768 /* libFLAC.a */; };
+		6DF4A038123B523F00191768 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A036123B523F00191768 /* libFLAC.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		6DF4A0B5123B609A00191768 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A0B3123B609A00191768 /* libogg.a */; };
 		6DF4A0B6123B609A00191768 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A0B4123B609A00191768 /* libvorbis.a */; };
 		6DF4A0BC123B60BB00191768 /* libvorbisenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF4A0BB123B60BB00191768 /* libvorbisenc.a */; };
@@ -161,14 +161,10 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2F7446980DB6B7EA00F9684A /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Audirvana_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audirvana_Prefix.pch; sourceTree = "<group>"; };
-		6D016B21136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Preferences.xib; sourceTree = "<group>"; };
-		6D016B22136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6D016B23136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D016B24136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = fr; path = fr.lproj/Credits.rtfd; sourceTree = "<group>"; };
-		6D016B25136C202C00555E24 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Debug.xib; sourceTree = "<group>"; };
 		6D06C3D31260575B00A51557 /* AudioFileFLACLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioFileFLACLoader.h; path = AudioFileUtils/AudioFileFLACLoader.h; sourceTree = "<group>"; };
 		6D06C3D41260575B00A51557 /* AudioFileFLACLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioFileFLACLoader.m; path = AudioFileUtils/AudioFileFLACLoader.m; sourceTree = "<group>"; };
-		6D0C9A4B136C399700E1759B /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Playlist.xib; sourceTree = "<group>"; };
 		6D1028451286C184006391A4 /* AudirvanaAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AudirvanaAppIcon.icns; path = Images/AudirvanaAppIcon.icns; sourceTree = "<group>"; };
 		6D17CCD61364784100740C02 /* libAudioOutputLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAudioOutputLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D17CCD71364784100740C02 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -275,12 +271,8 @@
 		6DD905C31335E43A00A09DB1 /* DurationFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DurationFormatter.m; path = common/DurationFormatter.m; sourceTree = "<group>"; };
 		6DD906541335F0B800A09DB1 /* TrackNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackNumberFormatter.h; path = common/TrackNumberFormatter.h; sourceTree = "<group>"; };
 		6DD906551335F0B800A09DB1 /* TrackNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackNumberFormatter.m; path = common/TrackNumberFormatter.m; sourceTree = "<group>"; };
-		6DE536B31382FFF000CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/Playlist.xib; sourceTree = "<group>"; };
 		6DE536B51382FFF500CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6DE536B61382FFF500CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = de; path = de.lproj/Credits.rtfd; sourceTree = "<group>"; };
-		6DE536B71382FFF500CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/Debug.xib; sourceTree = "<group>"; };
-		6DE536B81382FFF500CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6DE536B91382FFF500CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/Preferences.xib; sourceTree = "<group>"; };
 		6DE536BA1382FFF500CD56B0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DF17B38126984A900051593 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceController.h; path = Application/PreferenceController.h; sourceTree = "<group>"; };
 		6DF17B39126984A900051593 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferenceController.m; path = Application/PreferenceController.m; sourceTree = "<group>"; };
@@ -708,7 +700,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Free Software";
 			};
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Audirvana" */;
@@ -871,8 +863,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				2F7446980DB6B7EA00F9684A /* English */,
-				6D016B22136C202C00555E24 /* fr */,
-				6DE536B81382FFF500CD56B0 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -880,9 +870,7 @@
 		6D0C9A49136C398E00E1759B /* Playlist.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6D0C9A4B136C399700E1759B /* fr */,
 				6D7F6490136C3BDC000F1C27 /* English */,
-				6DE536B31382FFF000CD56B0 /* de */,
 			);
 			name = Playlist.xib;
 			path = Player;
@@ -912,8 +900,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6DA2DFD012992FBD00F29798 /* English */,
-				6D016B25136C202C00555E24 /* fr */,
-				6DE536B71382FFF500CD56B0 /* de */,
 			);
 			name = Debug.xib;
 			sourceTree = "<group>";
@@ -922,8 +908,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6DF17B3C1269857800051593 /* English */,
-				6D016B21136C202C00555E24 /* fr */,
-				6DE536B91382FFF500CD56B0 /* de */,
 			);
 			name = Preferences.xib;
 			sourceTree = "<group>";
@@ -934,7 +918,7 @@
 		26FC0A850875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -954,6 +938,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/extern/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.dplisson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Audirvana;
 				WRAPPER_EXTENSION = app;
 			};
@@ -962,7 +947,7 @@
 		26FC0A860875C7B200E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -980,6 +965,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/extern/lib\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.dplisson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Audirvana;
 				WRAPPER_EXTENSION = app;
 			};
@@ -988,8 +974,17 @@
 		26FC0A890875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_UNROLL_LOOPS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -997,6 +992,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = extern/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
@@ -1010,17 +1008,28 @@
 		26FC0A8A0875C7B200E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_UNROLL_LOOPS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = extern/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
@@ -1035,7 +1044,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1055,7 +1064,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;

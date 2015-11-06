@@ -355,8 +355,9 @@
 	if (!preferenceController) {
 		preferenceController = [[PreferenceController alloc] init];
 	}
-	[preferenceController showWindow:sender];
-	[preferenceController setAvailableDevicesList:audioOut.audioDevicesList];
+    
+    [preferenceController showWindow:sender];
+    [preferenceController setAvailableDevicesList:audioOut.audioDevicesList];
 	[preferenceController setActiveDeviceDesc:[[audioOut audioDevicesList] objectAtIndex:audioOut.selectedAudioDeviceIndex]];
 }
 
@@ -1218,7 +1219,7 @@
 {
 	UInt64 currentFrame = [audioOut currentPlayingPosition];
 	//Update dockicon display
-	NSString *dockIconString = [NSString stringWithFormat:@"Tr.%02i\n%02i:%02i",
+	NSString *dockIconString = [NSString stringWithFormat:@"Tr.%02li\n%02i:%02i",
 								[mPlaylistDoc playingTrackIndex]+1,
 								(int)(currentFrame/[audioOut audioDeviceCurrentNominalSampleRate])/60,
 								(int)(currentFrame/[audioOut audioDeviceCurrentNominalSampleRate])%60];
